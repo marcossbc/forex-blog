@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blogs - KOOSHIN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>body{font-family:"Poppins",sans-serif}</style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+
+  <header class="flex items-center justify-between p-4 border-b bg-white sticky top-0 z-50">
+    <div class="logo text-2xl text-purple-700 font-semibold flex items-center space-x-2">
+      <span>💜</span><strong>KOOSHIN</strong>
+    </div>
+
+    <!-- Hamburger (mobile) -->
+    <button id="hamburger" class="md:hidden p-2 rounded-md text-purple-700" aria-label="Open menu">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+
+    <!-- Desktop nav -->
+    <nav id="nav" class="hidden md:flex md:items-center md:space-x-6">
+      <a href="index.html" class="text-gray-600 hover:text-purple-700 font-medium p-2 block">Home</a>
+      <a href="blog.html" class="nav-link text-purple-700 font-medium hover:text-purple-900 border-b-2 border-purple-700 pb-1 p-2 block">Blogs</a>
+      <a href="app.html" class="text-gray-600 hover:text-purple-700 font-medium p-2 block">Apps</a>
+      <a href="about.html" class="text-gray-600 hover:text-purple-700 font-medium p-2 block">About</a>
+      <a href="contact.html" class="text-gray-600 hover:text-purple-700 font-medium p-2 block">Contact</a>
+      <a href="singup.html" class="text-gray-600 hover:text-purple-700 font-medium p-2 block">Sign up</a>
+    </nav>
+
+    <!-- Mobile sliding menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black/40 z-40 hidden">
+      <div class="bg-white w-64 h-full p-6 shadow-xl">
+        <div class="flex items-center justify-between mb-6">
+          <div class="text-2xl text-purple-700 font-semibold flex items-center space-x-2"><span>💜</span><strong>KOOSHIN</strong></div>
+          <button id="closeMenu" class="text-xl text-gray-600"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="flex flex-col space-y-3">
+          <a href="index.html" class="mobile-link text-gray-700 hover:text-purple-700">Home</a>
+          <a href="blog.html" class="mobile-link text-purple-700 font-medium">Blogs</a>
+          <a href="app.html" class="mobile-link text-gray-700 hover:text-purple-700">Apps</a>
+          <a href="about.html" class="mobile-link text-gray-700 hover:text-purple-700">About</a>
+          <a href="contact.html" class="mobile-link text-gray-700 hover:text-purple-700">Contact</a>
+          <a href="singup.html" class="mobile-link text-gray-700 hover:text-purple-700">Sign up</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="hidden md:flex space-x-3">
+      <a href="singup.html" class="px-4 py-2 border border-purple-700 text-purple-700 rounded-lg hover:bg-purple-50 transition duration-150">Log in</a>
+      <a href="singup.html" class="px-4 py-2 bg-purple-700 text-white rounded-lg hover:bg-purple-800 transition duration-150">Sign up</a>
+    </div>
+  </header>
+
+  <main class="flex-grow container mx-auto p-6 md:p-10">
+    <section class="py-6">
+      <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-10">Latest Blog Posts</h2>
+
+      <div id="postsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- cards injected by JS -->
+      </div>
+
+      <div class="flex justify-center mt-12 space-x-4">
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg">Previous</button>
+        <button class="px-4 py-2 bg-purple-700 text-white rounded-lg">1</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg">2</button>
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg">Next</button>
+      </div>
+    </section>
+  </main>
+   <footer class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto p-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="footer-column">
+                <div class="logo text-2xl text-purple-400 font-bold mb-4">
+                    <span>💜</span> KOOSHIN
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Platform-kaaga koowaad ee waxbarashada iyo tignoolajiyada.</p>
+                <div class="flex space-x-4 text-xl social-icons">
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-tumblr"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 class="text-lg font-semibold mb-4 text-white">Service</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-purple-400 transition">Marketing</a></li>
+                    <li><a href="#" class="hover:text-purple-400 transition">Buy and Sell</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="text-lg font-semibold mb-4 text-white">Useful Links</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-purple-400 transition">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-purple-400 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-purple-400 transition">Disclosures</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="text-lg font-semibold mb-4 text-white">Contact Info</h3>
+                <div class="space-y-3 contact-info text-gray-400">
+                    <div class="flex items-center space-x-2"><i class="fas fa-map-marker-alt text-purple-400"></i><span>Kampala</span></div>
+                    <div class="flex items-center space-x-2"><i class="fas fa-envelope text-purple-400"></i><a href="mailto:info@kooshinEreg.com" class="hover:text-purple-400 transition">info@kooshinEreg.com</a></div>
+                    <div class="flex items-center space-x-2"><i class="fas fa-phone text-purple-400"></i><a href="tel:+252907673469" class="hover:text-purple-400 transition">+252 907673469</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <footer class="bg-gray-800 text-white mt-auto">
+    <div class="container mx-auto p-8 text-center text-gray-400">
+      Copyright © 2025 KOOSHIN
+    </div>
+  </footer>
+
+  <script>
+    /* ===== Sample posts data (could be from API) ===== */
+    const posts = [
+      {
+        id: 1,
+        category: "Technology",
+        title: "Hagaha Dhameystiran ee Horumarinta Forex 2025",
+        excerpt: "🚀 Qorshaha Barashada Forex Trading (3 Heer).",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE6TOVYiy0Z8sPO_0jORYZIMMwwRGe8eWwDA&s",
+        date: "November 8, 2025",
+        author: "KOOSHIN"
+      },
+      {
+        id: 2,
+        category: "Apps & Software",
+        title: "Dib u Eegista App-ka cusub ee Wax-qabadka",
+        excerpt: "App-kan wuxuu balan qaadayaa inuu kordhinayo wax-qabadkaaga 50%.",
+        image: "https://assets.isu.pub/entity-article/user-assets/63945358/74b01632a1e0faac53a7a9e9deb2ed38d3607fa81735618392052.jpg",
+        date: "October 24, 2025",
+        author: "KOOSHIN"
+      },
+      {
+        id: 3,
+        category: "Career",
+        title: "Isbeddelka Nolosha: Sidee Loo Bilaabaa Freelancing?",
+        excerpt: "Talooyin ku saabsan sida aad ugu guulaysan karto adduunka shaqada xorta ah.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0CavIueT-zJVryyQ1k3PzW14ggSKm_f8BQ&s",
+        date: "September 10, 2025",
+        author: "KOOSHIN"
+      }
+    ];
+
+    /* ===== Utility: escape HTML ===== */
+    function escapeHtml(s){ return String(s).replace(/[&<>"']/g, function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]; }); }
+
+    /* ===== Create and append cards ===== */
+    const grid = document.getElementById('postsGrid');
+    function createCard(post) {
+      const article = document.createElement('article');
+      article.className = "bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 overflow-hidden";
+
+      article.innerHTML = `
+        <img class="w-full h-48 object-cover" src="${post.image}" alt="${escapeHtml(post.title)}">
+        <div class="p-6">
+          <span class="text-xs font-semibold uppercase tracking-wider ${post.category==='Technology'? 'text-purple-600 bg-purple-100' : post.category==='Apps & Software' ? 'text-green-600 bg-green-100' : 'text-blue-600 bg-blue-100'} px-3 py-1 rounded-full mb-2 inline-block">${escapeHtml(post.category)}</span>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-purple-700 transition duration-150">${escapeHtml(post.title)}</h3>
+          <p class="text-gray-600 mb-4 text-sm">${escapeHtml(post.excerpt)}</p>
+          <a data-id="${post.id}" class="read-more text-purple-600 font-semibold hover:text-purple-800 flex items-center space-x-1" href="blog-details.html?id=${post.id}">
+            <span>Akhri Wax Dheeraad Ah</span>
+            <i class="fas fa-arrow-right text-sm ml-2"></i>
+          </a>
+        </div>
+      `;
+      return article;
+    }
+
+    posts.forEach(p => grid.appendChild(createCard(p)));
+
+    /* ===== Mobile menu toggle ===== */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+    });
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+    // hide menu when clicking outside panel
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) mobileMenu.classList.add('hidden');
+    });
+
+    /* ===== Prevent navigating away when clicking nav link that points to current page =====
+       This keeps user on the same page if they click "Blogs" while already on blog.html. */
+    const navLinks = document.querySelectorAll('nav a, .mobile-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        try {
+          // normalize: get path portion only (no query)
+          const linkPath = new URL(link.href, location.href).pathname.replace(/\/$/, '');
+          const currentPath = location.pathname.replace(/\/$/, '');
+          if (linkPath === currentPath) {
+            // already on that page -> prevent unnecessary reload
+            e.preventDefault();
+            // close mobile menu if open
+            mobileMenu.classList.add('hidden');
+            // optionally, scroll to top or focus main
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            // allow navigation (desktop) or close mobile menu (mobile)
+            mobileMenu.classList.add('hidden');
+          }
+        } catch (err) {
+          // fallback: do nothing
+        }
+      });
+    });
+
+    /* ===== Optional: If you want "Akhri Wax Dheeraad Ah" to open details in a new tab instead of navigating away,
+       uncomment below and it will open details in new tab while keeping current page intact. =====
+    document.querySelectorAll('.read-more').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = a.getAttribute('href');
+        window.open(url, '_blank');
+      });
+    });
+    */
+
+  </script>
+</body>
+</html>

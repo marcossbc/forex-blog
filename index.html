@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOOSHIN - Isha Aqoontaada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+    <header class="flex items-center justify-between p-4 border-b-2 border-gray-200 bg-white shadow-lg sticky top-0 z-50">
+        <div class="logo text-2xl text-purple-700 font-semibold flex items-center space-x-1">
+            <span>💜</span>
+            <strong>KOOSHIN</strong>
+        </div>
+        <nav class="nav-links absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none hidden md:block">
+            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 p-4 md:p-0">
+                <li><a class="text-purple-700 font-medium hover:text-purple-900 border-b-2 border-purple-700 pb-1 p-2 block" href="index.html">Home</a></li>
+                <li><a class="text-gray-600 hover:text-purple-700 font-medium p-2 block" href="blog.html">Blogs</a></li>
+                <li><a class="text-gray-600 hover:text-purple-700 font-medium p-2 block" href="app.html">Apps</a></li>
+                <li><a class="text-gray-600 hover:text-purple-700 font-medium p-2 block" href="about.html">About</a></li>
+                <li><a class="text-gray-600 hover:text-purple-700 font-medium p-2 block" href="Contact.html">Contact</a></li>
+                <li><a class="text-gray-600 hover:text-purple-700 font-medium p-2 block" href="singup.html">Sign up</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons hidden md:flex space-x-3">
+            <a href="singup.html" class="px-4 py-2 border border-purple-700 text-purple-700 rounded-lg hover:bg-purple-50 transition duration-150">Log in</a>
+            <a class="px-4 py-2 bg-purple-700 text-white rounded-lg hover:bg-purple-800 transition duration-150" href="singup.html">Sign up</a>
+        </div>
+        <div class="hamburger-menu md:hidden cursor-pointer text-2xl text-purple-700">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+        <section class="py-16 md:py-24 bg-white rounded-xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-8 px-6">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    <span class="text-purple-700">KOOSHIN</span> - Isha Aqoonta
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-10">Halkan ka hel blogyada, apps-ka, iyo wararka tignoolajiyada ee ugu dambeeya.</p>
+                <a href="blog.html" class="inline-block px-8 py-3 text-lg font-bold text-white bg-purple-600 rounded-full shadow-2xl hover:bg-purple-700 transform hover:scale-105 transition duration-300">
+                    Akhri Blogyada Hadda <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="assests/WhatsApp Image 2025-10-19 at 22.30.09_bd879f68.jpg" alt="Sawirka Kooshin Hero" class="rounded-xl shadow-2xl max-w-full h-auto object-cover md:max-w-md lg:max-w-lg" />
+            </div>
+        </section>
+
+        <section class="mt-16">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Waxyaabaha Muhiimka Ah ee Aad Nala Ka Heli Karto</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition duration-300">
+                    <i class="fas fa-blog text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Blogyada Cusub</h3>
+                    <p class="text-gray-600">Akhri maqaallada aan qorno todobaad kasta oo ku saabsan tignoolajiyada iyo waxbarashada.</p>
+                    <a href="blog.html" class="mt-4 inline-block text-purple-600 font-medium hover:text-purple-800">Eeg Blogyada →</a>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition duration-300">
+                    <i class="fas fa-mobile-alt text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Apps-ka Caawiya</h3>
+                    <p class="text-gray-600">Soo deji apps-ka aan sameynay ee kaa caawinaya waxbarashada iyo shaqada.</p>
+                    <a href="app.html" class="mt-4 inline-block text-purple-600 font-medium hover:text-purple-800">Eeg Apps-ka →</a>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition duration-300">
+                    <i class="fas fa-headset text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Nala Xiriir</h3>
+                    <p class="text-gray-600">Wax kasta oo aad u baahato, nala soo xiriir si aan wax kuu kala qabanno.</p>
+                    <a href="Contact.html" class="mt-4 inline-block text-purple-600 font-medium hover:text-purple-800">Tag Bogga Xiriirka →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 px-4">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-10 text-center border-b pb-4">📚 Buugaagta Forex ee Ugu Muhiimsan</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 group">
+                    <img src="assests/WhatsApp Image 2025-10-19 at 22.29.50_4168c1f9.jpg" alt="Sawirka Buugga Forex 1" class="w-full h-auto object-cover border-b-4 border-purple-600" />
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Trading Strategy Fundamentals</h3>
+                        <p class="text-gray-600 text-sm mb-2">Sharaxaad: Farsamooyinka aasaasiga ah ee lagu qeexo istiraatiijiyadda ganacsiga ee suuqa.</p>
+                        <span class="text-sm font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">Sannadda: 2025</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 group">
+                    <img src="assests/WhatsApp Image 2025-10-19 at 22.30.09_bd879f68.jpg" alt="Sawirka Buugga Forex 2" class="w-full h-auto object-cover border-b-4 border-purple-600" />
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">The Psychology of Money</h3>
+                        <p class="text-gray-600 text-sm mb-2">Sharaxaad: Fahmidda saamaynta shucuurta ay ku leedahay go'aamada ganacsiga iyo maalgashiga.</p>
+                        <span class="text-sm font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">Sannadda: 2025</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 group">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmqsS0oiG8BdvdhnSVn3ABE953IgWbPHulA&s" alt="Sawirka Buugga Forex 3" class="w-full h-auto object-cover border-b-4 border-purple-600" />
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Advanced Technical Analysis</h3>
+                        <p class="text-gray-600 text-sm mb-2">Sharaxaad: Qalabka falanqaynta farsamo (Technical Analysis) ee heer sare ah oo loogu talagalay suuqyada.</p>
+                        <span class="text-sm font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">Sannadda: 2025</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition duration-300 group">
+                    <img src="assests/WhatsApp Image 2025-10-19 at 22.29.45_8dcaee1b.jpg" alt="Sawirka Buugga Forex 4" class="w-full h-auto object-cover border-b-4 border-purple-600" />
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">Risk Management Mastery</h3>
+                        <p class="text-gray-600 text-sm mb-2">Sharaxaad: Maareynta halista iyo ilaalinta raasamaalka (Capital Preservation) ganacsiga Forex.</p>
+                        <span class="text-sm font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">Sannadda: 2025</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-dashed border-gray-300 flex items-center justify-center p-6 text-center transform hover:scale-[1.03] transition duration-300">
+                    <div>
+                        <i class="fas fa-book-open text-4xl text-gray-400 mb-3"></i>
+                       
+                        <img class="w-full h-64 object-cover" src="https://m.media-amazon.com/images/I/71pFKJr+RgL._SL1500_.jpg" alt="Sawirka Buugga Forex 5" />
+                        <p class="text-gray-500 text-sm mb-2">51 Trading Strategies: Backtested Swing, Intraday, Positional, Scalping & Option Trading Strategies | Advanced Strategies for F&O and Cash Market ... your Trades with 51 Time tested Strategies .</p>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-200 px-3 py-1 rounded-full">Sannadda: (Tusaale: 2024)</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-dashed border-gray-300 flex items-center justify-center p-6 text-center transform hover:scale-[1.03] transition duration-300">
+                    <div>
+                        <i class="fas fa-book-open text-4xl text-gray-400 mb-3"></i>
+                    
+                      <img class="w-full h-64 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuJkNqd3-2qKoQ75AAe2TNUqG-Nfw3Qt8Ftw&s" alt="Sawirka Buugga Forex 6" />
+                        <p class="text-gray-500 text-sm mb-2">Price Action Trading : Technical Analysis Simplified! by Sunil Gurjar (Chartmojo) - Chart Patterns | Candlestick Patterns | Breakout Patterns & Lot More !.</p>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-200 px-3 py-1 rounded-full">Sannadda: (Tusaale: 2024)</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-dashed border-gray-300 flex items-center justify-center p-6 text-center transform hover:scale-[1.03] transition duration-300">
+                    <div>
+                        <i class="fas fa-book-open text-4xl text-gray-400 mb-3"></i>
+                       
+                      <img class="w-full h-64 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGwwsmh_cSshWQw5h90k2v_f1_RnWOqcpQZQ&s" alt="Sawirka Buugga Forex 7" />
+                        <p class="text-gray-500 text-sm mb-2">Forex Trading for Beginners Magnus Mcgee : Strategies, Risk Management Methods, and Fundamental Analysis for Foreign Exchange Trading (2025 Crash Course for Newbies)</p>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-200 px-3 py-1 rounded-full">Sannadda: (Tusaale: 2024)</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-dashed border-gray-300 flex items-center justify-center p-6 text-center transform hover:scale-[1.03] transition duration-300">
+                    <div>
+                        <i class="fas fa-book-open text-4xl text-gray-400 mb-3"></i>
+                        
+                      <img class="w-full h-64 object-cover" src="https://m.media-amazon.com/images/I/61jMU41GQGL.jpg_BO30,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg" alt="Sawirka Buugga Forex 7" />
+                        <p class="text-gray-500 text-sm mb-2">THE DUMMY GUIDE TO FOREX TRADING 2024-2025: From Zero to Hero: A Simplified Beginners’ Approach to Transforming Your Finances in the Currency Market and Regain Financial Freedom.</p>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-200 px-3 py-1 rounded-full">Sannadda: (Tusaale: 2024)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto p-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="footer-column">
+                <div class="logo text-2xl text-purple-400 font-bold mb-4">
+                    <span>💜</span> KOOSHIN
+                </div>
+                <p class="text-gray-400 text-sm mb-4">Platform-kaaga koowaad ee waxbarashada iyo tignoolajiyada.</p>
+                <div class="flex space-x-4 text-xl social-icons">
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-tumblr"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 class="text-lg font-semibold mb-4 text-white">Service</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-purple-400 transition">Marketing</a></li>
+                    <li><a href="#" class="hover:text-purple-400 transition">Buy and Sell</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="text-lg font-semibold mb-4 text-white">Useful Links</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-purple-400 transition">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-purple-400 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-purple-400 transition">Disclosures</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="text-lg font-semibold mb-4 text-white">Contact Info</h3>
+                <div class="space-y-3 contact-info text-gray-400">
+                    <div class="flex items-center space-x-2"><i class="fas fa-map-marker-alt text-purple-400"></i><span>Kampala</span></div>
+                    <div class="flex items-center space-x-2"><i class="fas fa-envelope text-purple-400"></i><a href="mailto:info@kooshinEreg.com" class="hover:text-purple-400 transition">info@kooshinEreg.com</a></div>
+                    <div class="flex items-center space-x-2"><i class="fas fa-phone text-purple-400"></i><a href="tel:+252907673469" class="hover:text-purple-400 transition">+252 907673469</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bottom-copyright bg-gray-900 py-3 text-center text-gray-500 text-sm">
+        <p>Copyright © 2025 [kooshinEreg].</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
